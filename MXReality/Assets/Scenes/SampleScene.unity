@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ee81d50f83e62a46ba0f7bc4f7601fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1209913152}
   whatTransformation: 2
   objectsToCheck: []
   myToolBox: {fileID: 1308528748}
@@ -799,6 +800,7 @@ GameObject:
   - component: {fileID: 649961200}
   - component: {fileID: 649961199}
   - component: {fileID: 649961198}
+  - component: {fileID: 649961202}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -887,6 +889,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!225 &649961202
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649961197}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,6 +1215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ee81d50f83e62a46ba0f7bc4f7601fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1209913152}
   whatTransformation: 1
   objectsToCheck: []
   myToolBox: {fileID: 2012627290}
@@ -1300,7 +1315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c30d458cca6a12742a7c257424d70673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSpeed: 10
+  mouseSpeed: 6
   playerBody: {fileID: 1209913151}
 --- !u!1 &1016656610
 GameObject:
@@ -1480,6 +1495,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf5fa7c6bd70bf409eb3f3ce67408b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myCanvas: {fileID: 649961200}
+  cursorHovering: 0
 --- !u!1 &1243275148
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,7 +1846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6461506, g: 0, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2108,6 +2125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ee81d50f83e62a46ba0f7bc4f7601fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1209913152}
   whatTransformation: 0
   objectsToCheck:
   - {fileID: 836194465}

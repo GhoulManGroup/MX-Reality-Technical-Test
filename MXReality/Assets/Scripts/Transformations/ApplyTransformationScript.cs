@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 
 public class ApplyTransformationScript : MonoBehaviour
 {
+    [SerializeField]
+    private PlayerScript player;
     //This script tracks what desired transformation is to be applied to each object and executes them based on the result of the enum.
 
     [Header("Object States")]
@@ -33,6 +35,9 @@ public class ApplyTransformationScript : MonoBehaviour
         //This function displays the object tooltip when the player mouse hovers over it.
         myToolBox.GetComponent<ToolTipScript>().ShowToolBox();
         myToolBox.GetComponent<ToolTipScript>().hovering = true;
+        player.ShowCursor();
+        player.cursorHovering = true;
+
     }
     
     public void OnMouseDown()
@@ -94,6 +99,8 @@ public class ApplyTransformationScript : MonoBehaviour
         //This function hides the object tooltip when the player mouse stops hovering over it.
         myToolBox.GetComponent<ToolTipScript>().HideToolBox();
         myToolBox.GetComponent<ToolTipScript>().hovering = false;
+        player.cursorHovering = false;
+        player.HideCursor();
     }
    
 }
